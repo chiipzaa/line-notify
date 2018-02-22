@@ -1,13 +1,12 @@
 <?php
 
 $Token = $_GET["Token"];
-$message = $_GET["message "];
+$message = $_GET["message"];
 
-line_notify($Token, $message);
+line_notify($Token,$message);
 
-fucntion line_notify($Token, $message)
-{
-        $lineapi = $Token; // ใส่ token key ที่ได้มา
+function line_notify($Token,$message){
+    $lineapi = $Token; // ใส่ token key ที่ได้มา
 	$mms =  trim($message); // ข้อความที่ต้องการส่ง
 	date_default_timezone_set("Asia/Bangkok");
 	$chOne = curl_init(); 
