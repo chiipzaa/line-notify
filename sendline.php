@@ -1,5 +1,12 @@
 <?php
 
+/*
+ *
+ * @Author: teerasit.art
+ * Create Date: 19/2/2018 AD  /Time: 10:31
+ * Donate to support: https://store.line.me/stickershop/product/1562289/
+ */
+
 $Token = $_GET["Token"];
 $message = $_GET["message"];
 
